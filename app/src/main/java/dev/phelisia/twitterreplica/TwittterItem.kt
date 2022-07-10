@@ -1,0 +1,14 @@
+package dev.phelisia.twitterreplica
+
+data class TwittterItem(
+    var name:String,
+    var handle:String,
+    var time:String,
+    var tweet :String,
+    var imageView2:String,
+    var imageView4:String,
+    var imageView5:String,
+    var imageView6:String,
+    var imageView7:String,
+    var sexymama:String
+)
