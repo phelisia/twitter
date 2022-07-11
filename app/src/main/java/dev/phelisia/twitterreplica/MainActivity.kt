@@ -11,62 +11,62 @@ class MainActivity : AppCompatActivity() {
         binding=ActivityMainBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-        displaycontact()
+        displaytweet()
     }
 
-    private fun displaycontact() {
-        var contact1=TwittterItem("SK","sang@jeruto","2h","But now, this is what the Lord says—\n" +
+    private fun displaytweet() {
+        var tweet1=TwittterItem("SK","sang@jeruto","2h","But now, this is what the Lord says—\n" +
                 "    he who created you, Jacob,\n" +
                 "    he who formed you, Israel:\n" +
                 "“Do not fear, for I have redeemed you;\n" +
                 "    I have summoned you by name; you are mine.","","","","","","")
-        var contact2=TwittterItem("LJ","judy@wanaina","2h","But now, this is what the Lord says—\n" +
+        var tweet2=TwittterItem("LJ","judy@wanaina","2h","But now, this is what the Lord says—\n" +
                 "    he who created you, Jacob,\n" +
                 "    he who formed you, Israel:\n" +
                 "“Do not fear, for I have redeemed you;\n" +
                 "    I have summoned you by name; you are mine.","","","","","","")
-        var contact3=TwittterItem("KJ","conslate@koyo","2h","But now, this is what the Lord says—\n" +
+        var tweet3=TwittterItem("KJ","conslate@koyo","2h","But now, this is what the Lord says—\n" +
                 "    he who created you, Jacob,\n" +
                 "    he who formed you, Israel:\n" +
                 "“Do not fear, for I have redeemed you;\n" +
                 "    I have summoned you by name; you are mine.","","","","","","")
-        var contact4=TwittterItem("HK","maryann@gathanga","2h","But now, this is what the Lord says—\n" +
+        var tweet4=TwittterItem("HK","maryann@gathanga","2h","But now, this is what the Lord says—\n" +
                 "    he who created you, Jacob,\n" +
                 "    he who formed you, Israel:\n" +
                 "“Do not fear, for I have redeemed you;\n" +
                 "    I have summoned you by name; you are mine.","","","","","","")
-        var contact5=TwittterItem("PJ","mercy@yugi","2h","But now, this is what the Lord says—\n" +
+        var tweet5=TwittterItem("PJ","mercy@yugi","2h","But now, this is what the Lord says—\n" +
                 "    he who created you, Jacob,\n" +
                 "    he who formed you, Israel:\n" +
                 "“Do not fear, for I have redeemed you;\n" +
                 "    I have summoned you by name; you are mine.","","","","","","")
-        var contact6=TwittterItem("Abby","natete@verite","2h","But now, this is what the Lord says—\n" +
+        var tweet6=TwittterItem("Abby","natete@verite","2h","But now, this is what the Lord says—\n" +
                 "    he who created you, Jacob,\n" +
                 "    he who formed you, Israel:\n" +
                 "“Do not fear, for I have redeemed you;\n" +
                 "    I have summoned you by name; you are mine.","","","","","","")
-        var contact7=TwittterItem("Abby","0718117097","2h","But now, this is what the Lord says—\n" +
+        var tweet7=TwittterItem("Abby","0718117097","2h","But now, this is what the Lord says—\n" +
                 "    he who created you, Jacob,\n" +
                 "    he who formed you, Israel:\n" +
                 "“Do not fear, for I have redeemed you;\n" +
                 "    I have summoned you by name; you are mine.","","","","","","")
-        var contact8=TwittterItem("Abby","Lucy@karimi","2h","But now, this is what the Lord says—\n" +
+        var tweet8=TwittterItem("Abby","Lucy@karimi","2h","But now, this is what the Lord says—\n" +
                 "    he who created you, Jacob,\n" +
                 "    he who formed you, Israel:\n" +
                 "“Do not fear, for I have redeemed you;\n" +
                 "    I have summoned you by name; you are mine.","","","","","","")
-        var contact9=TwittterItem("Abby","kirigo@mercy","2h","But now, this is what the Lord says—\n" +
+        var tweet9=TwittterItem("Abby","kirigo@mercy","2h","But now, this is what the Lord says—\n" +
                 "    he who created you, Jacob,\n" +
                 "    he who formed you, Israel:\n" +
                 "“Do not fear, for I have redeemed you;\n" +
                 "    I have summoned you by name; you are mine.","","","","","","")
-        var contact10=TwittterItem("Abby","s","2h","But now, this is what the Lord says—\n" +
+        var tweet10=TwittterItem("Abby","s","2h","But now, this is what the Lord says—\n" +
                 "    he who created you, Jacob,\n" +
                 "    he who formed you, Israel:\n" +
                 "“Do not fear, for I have redeemed you;\n" +
                 "    I have summoned you by name; you are mine.","","","","","","")
-        var allcontact= listOf(contact1,contact2,contact3,contact4,contact5,contact6,contact7,contact8,contact9,contact10)
-        var twitterAdapter=TwitterAdapter(allcontact)
+        var alltweets= listOf(tweet1,tweet2,tweet3,tweet4,tweet5,tweet6,tweet7,tweet8,tweet9,tweet10)
+        var twitterAdapter=TwitterAdapter(alltweets)
         binding.rvTweet.layoutManager= LinearLayoutManager(this)
         binding.rvTweet.adapter=twitterAdapter
     }
